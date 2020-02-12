@@ -1,5 +1,4 @@
 def prime?(number)
-  (2..number-1).none? {|divisor| number % divisor == 0}
+  state = (2..number-1).none? {|divisor| number % divisor == 0}
+  state
 end
-
-p prime?(4)
